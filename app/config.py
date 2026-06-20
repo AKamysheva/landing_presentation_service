@@ -1,8 +1,4 @@
-# flake8: noqa: E501
-from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
-
-BASE_DIR = Path(__file__).parent.parent.parent
 
 
 class Settings(BaseSettings):
