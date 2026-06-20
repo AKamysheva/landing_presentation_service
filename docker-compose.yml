@@ -1,0 +1,14 @@
+services:
+  landing_backend:
+    build: .
+    container_name: web_landing_backend
+    volumes:
+      - .:/app
+    env_file:
+      - ./app/.env
+    command: >
+      bash -c "
+      poetry run uvicorn app.main:app --host 0.0.0.0 --port 8900
+      "
+    ports:
+      - "8900:8900"

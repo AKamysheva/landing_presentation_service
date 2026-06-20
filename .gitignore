@@ -1,0 +1,13 @@
+.vscode
+__pycache__
+.env
+.history
+
+
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache
+__pypackages__/
+logs.log
